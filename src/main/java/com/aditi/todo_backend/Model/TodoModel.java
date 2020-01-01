@@ -1,7 +1,14 @@
 package com.aditi.todo_backend.Model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class TodoModel {
 
+	@Id
+	@GeneratedValue
 	int id;
 	String title;
 	String description;
