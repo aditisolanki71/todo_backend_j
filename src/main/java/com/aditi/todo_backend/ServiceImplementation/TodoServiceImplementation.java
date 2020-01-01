@@ -1,5 +1,7 @@
 package com.aditi.todo_backend.ServiceImplementation;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +18,11 @@ public class TodoServiceImplementation implements TodoService{
 	public TodoModel addTodo(TodoModel todo) {
 		// TODO Auto-generated method stub
 		return todorepository.save(todo);
+	}
+	@Override
+	public List<TodoModel> getAllTodo() {
+		// TODO Auto-generated method stub
+		return todorepository.findAll();
 	}
 
 }
