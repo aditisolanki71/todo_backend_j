@@ -10,4 +10,5 @@ public interface TodoService {
 	TodoModel addTodo(TodoModel todo);
 	List<TodoModel> getAllTodo();
 	TodoModel updateTodo(TodoModel todo);
+	void deleteTodo(int id);
 }

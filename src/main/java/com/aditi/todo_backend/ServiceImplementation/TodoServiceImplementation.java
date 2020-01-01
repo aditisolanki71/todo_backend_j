@@ -29,5 +29,10 @@ public class TodoServiceImplementation implements TodoService{
 		// TODO Auto-generated method stub
 		return todorepository.save(todo);
 	}
+	@Override
+	public void deleteTodo(int id) {
+		// TODO Auto-generated method stub
+		todorepository.deleteById(id);
+	}
 
 }
