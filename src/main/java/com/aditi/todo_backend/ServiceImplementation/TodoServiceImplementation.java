@@ -41,6 +41,11 @@ public class TodoServiceImplementation implements TodoService{
 		Optional<TodoModel> g = todorepository.findById(id);
 		return g.get();
 	}
+	@Override
+	public void deleteAllTodo() {
+		// TODO Auto-generated method stub
+		todorepository.deleteAll();
+	}
 	
 	
 
