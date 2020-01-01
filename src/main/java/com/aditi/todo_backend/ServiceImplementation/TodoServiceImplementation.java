@@ -24,5 +24,10 @@ public class TodoServiceImplementation implements TodoService{
 		// TODO Auto-generated method stub
 		return todorepository.findAll();
 	}
+	@Override
+	public TodoModel updateTodo(TodoModel todo) {
+		// TODO Auto-generated method stub
+		return todorepository.save(todo);
+	}
 
 }
